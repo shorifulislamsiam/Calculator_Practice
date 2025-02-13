@@ -219,6 +219,13 @@ class _MyhomepageState extends State<Myhomepage> {
                 ),
                 const SizedBox(width: 5),
                 Buildbutton(
+                  digit: ".",
+                  onClick: () {
+                    buttonPressed(".");
+                  },
+                ),
+                const SizedBox(width: 5),
+                Buildbutton(
                   digit: "=",
                   onClick: () {
                     buttonPressed("=");
