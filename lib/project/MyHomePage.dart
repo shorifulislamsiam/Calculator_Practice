@@ -54,10 +54,10 @@ class _MyhomepageState extends State<Myhomepage> {
       appBar: AppBar(
         title: const Text(
           "Calculator",
-          style: TextStyle(fontSize: 20, color: Colors.black),
+          style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.green,
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 20),
@@ -72,7 +72,8 @@ class _MyhomepageState extends State<Myhomepage> {
                     child: Text(
                       history[index],
                       style: const TextStyle(fontSize: 20),
-                      textDirection: TextDirection.rtl,
+                      //textDirection: TextDirection.rtl,
+                      textAlign: TextAlign.right,
                     ),
                   );
                 },
