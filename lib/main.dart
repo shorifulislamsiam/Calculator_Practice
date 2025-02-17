@@ -1,5 +1,9 @@
-import 'package:calculator/project/MyHomePage.dart';
+
+import 'package:calculator/water_tracker/watertracker.dart';
 import 'package:flutter/material.dart';
+
+//import 'calculator/MyHomePage.dart';
+//import 'expence_tracker/Expencetracker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +19,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Myhomepage(),
+      home: const watertracker(), //Expencetracker(),//Myhomepage(),
       debugShowCheckedModeBanner: false,
+
     );
   }
 }
