@@ -1,3 +1,4 @@
+import 'package:calculator/calculator/Allicons.dart';
 import 'package:flutter/material.dart';
 
 import 'Buildbutton.dart';
@@ -59,6 +60,14 @@ class _MyhomepageState extends State<Myhomepage> {
         ),
         centerTitle: true,
         backgroundColor: Colors.green,
+        actions: [
+          IconButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (_)=>Allicons()));
+              },
+              icon: Icon(Icons.menu),
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 20),

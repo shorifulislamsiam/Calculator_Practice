@@ -31,7 +31,6 @@ class _watertrackerState extends State<watertracker> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     double _progress= (_currentIntakeWater / _goal);
@@ -86,7 +85,7 @@ class _watertrackerState extends State<watertracker> {
               ),
               Center(
                 child: Text(
-                  "${_progress*100}%",
+                  "${(_progress*100).toStringAsFixed(2)}%",
                   style: _allColors.getTextstyle(20, FontWeight.bold, Colors.white),
                 ),
               )
